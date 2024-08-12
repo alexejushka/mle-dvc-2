@@ -45,6 +45,7 @@ def fit_model():
     )
     pipeline.fit(data, data['target'])
     
+    
 	# сохраните обученную модель в models/fitted_model.pkl
     os.makedirs('models', exist_ok=True)
     with open('models/fitted_model.pkl', 'wb') as fd:
